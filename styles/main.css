@@ -18,15 +18,34 @@ h1,h2,h3,h4,h5,h6 {
   letter-spacing: 2px;
 }
 header {
+	display: flex;
 	text-align: center;
+	justify-content:space-around;
 	background: rgb(163, 181, 201);
-	padding: 1rem;
+	padding: .6rem;
+	margin-top: -.2rem;
 	color: rgb(43, 40, 40);
+}
+.header {
+	align-self:center;
+	font-size: 2.2rem;
+}
+nav ul li {
+	padding: .2rem 0;
+}
+nav a {
+	color:rgb(43, 40, 40);
+}
+nav a:hover {
+	color:rgb(219, 85, 85);
+}
+nav a:active {
+	color:rgb(29, 42, 233);
 }
 
 .repr__info {
 	display: flex;
-	border: solid 1px rgba(198, 219, 219, 0.7);
+	border: solid 1px rgba(198, 219, 219, 0.1);
 	background: whitesmoke;
 
 	justify-content:space-evenly;
@@ -37,22 +56,28 @@ header {
 	text-align: center;
 	justify-content: space-around;
 	padding: 1rem;
+	font-size: 1.3rem;
+}
+.repr_picture {
+	padding: .6rem 0;
 }
 
 .repr__name {
 	font-size: 1.5rem;
+	margin-bottom: .1rem;
 }
 .repr__committees {
 	display: flex;
 	padding-right: 3rem;
-	border: solid 1px rgba(108, 119, 119, 0.7)
+	border: solid 1px rgba(108, 119, 119, 0.1)
 }
 
 .legislation {
 	display: flex;
 	flex-direction: column;
-	border: 1px solid rgba(181, 202, 202, 0.7);
-	padding: 1rem;
+	background: whitesmoke;
+	border: 1px solid rgba(181, 202, 202, 0.1);
+	padding: 1rem 2rem;
 }
 .legislation p {
 	padding: 0 3rem 0 1rem;
@@ -63,6 +88,18 @@ ul {
 li {
 	list-style: none;
 }
+.contact_info {
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	font-weight: 800;
+	padding: 0 23%;
+}
+.contact_info p {
+	align-items: center;
+	
+}
 
 footer {
 	display: flex;
@@ -70,16 +107,12 @@ footer {
 	color:rgb(43,40,40);
 	padding: 1em;
 	justify-content: space-between;
-	padding: .2rem 2rem;
-
+	padding: .2rem 3rem;
 }
 .copyright {
 	align-self: center;
 	font-size: 1.2rem;
 }
 footer img {
-	
 	width: 50px;
-
-
 }
