@@ -30,16 +30,17 @@ header {
 	align-self:center;
 	font-size: 2.2rem;
 }
-nav ul li {
+.header__nav-list {
 	padding: .2rem 0;
+	list-style: none;
 }
-nav a {
+.header__nav-list-link {
 	color:rgb(43, 40, 40);
 }
-nav a:hover {
+.header__nav-list-link:hover {
 	color:rgb(219, 85, 85);
 }
-nav a:active {
+.header__nav-list-link:active {
 	color:rgb(29, 42, 233);
 }
 
@@ -58,18 +59,29 @@ nav a:active {
 	padding: 1rem;
 	font-size: 1.3rem;
 }
-.repr_picture {
-	padding: .6rem 0;
+.repr__picture {
+	margin: 1rem 0;
+	
 }
 
 .repr__name {
 	font-size: 1.5rem;
 	margin-bottom: .1rem;
 }
-.repr__committees {
+.committees {
 	display: flex;
-	padding-right: 3rem;
-	border: solid 1px rgba(108, 119, 119, 0.1)
+	flex-direction: column;
+	padding: 1rem 2rem;
+	border: solid 1px rgba(108, 119, 119, 0.1);
+	
+	
+}
+/* .committees__title {
+	flex-direction: column;
+} */
+
+.committee__sub-committees {
+	line-height: 1.8rem;
 }
 
 .legislation {
@@ -79,25 +91,38 @@ nav a:active {
 	border: 1px solid rgba(181, 202, 202, 0.1);
 	padding: 1rem 2rem;
 }
-.legislation p {
-	padding: 0 3rem 0 1rem;
+.legislation__desc {
+	padding: 0 4rem 0 1rem;
+	line-height: 1.8rem;
+	
 }
-ul {
-	margin-left: rem;
-}
+
 li {
 	list-style: none;
 }
-.contact_info {
+.contact-info {
 	display:flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: flex-start;
 	font-weight: 800;
-	padding: 0 23%;
+	padding: 5% 23%;
 }
-.contact_info p {
+
+.contact-info__link {
+	color:rgb(29, 141, 61);
+}
+.contact-info__link:hover {
+	color:rgb(219, 85, 85);
+}
+.contact-info__link:active {
+	color:rgb(29,42,233);
+}
+
+.contact-info_desc {
 	align-items: center;
+	font-weight: 600;
+	font-size: 1rem;
 	
 }
 
@@ -113,6 +138,6 @@ footer {
 	align-self: center;
 	font-size: 1.2rem;
 }
-footer img {
+.footer__image {
 	width: 50px;
 }
