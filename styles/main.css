@@ -17,13 +17,21 @@ h1,h2,h3,h4,h5,h6 {
   font-family: "Patua One", serif;
   letter-spacing: 2px;
 }
+
+* {
+  box-sizing: border-box;
+}
+.flex-wrap {
+	display:flex;
+	flex-direction: column;
+}
 header {
 	display: flex;
 	text-align: center;
 	justify-content:space-around;
 	background: rgb(163, 181, 201);
-	padding: .6rem;
-	margin-top: -.2rem;
+	padding: .6rem 0;
+	margin: -1rem 0 0 0;
 	color: rgb(43, 40, 40);
 }
 .header {
@@ -43,7 +51,9 @@ header {
 .header__nav-list-link:active {
 	color:rgb(29, 42, 233);
 }
-
+.main-wrapper {
+	flex:1 0 auto;
+}
 .repr__info {
 	display: flex;
 	border: solid 1px rgba(198, 219, 219, 0.1);
@@ -125,14 +135,18 @@ li {
 	font-size: 1rem;
 	
 }
-
-footer {
+.footer-wrap {
+	flex-shrink:0;
+	/* padding:20px; */
+}
+.footer {
 	display: flex;
 	background:rgb(163, 181, 201);
 	color:rgb(43,40,40);
 	padding: 1em;
 	justify-content: space-between;
 	padding: .2rem 3rem;
+	margin-top: -30px;
 }
 .copyright {
 	align-self: center;
